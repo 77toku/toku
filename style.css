@@ -467,3 +467,121 @@ textarea{
     padding:80px 18px 120px;
   }
 }
+/* 限定特典 共通 */
+.benefit-box {
+  max-width: 760px;
+  margin: 40px auto 0;
+  padding: 40px 30px;
+  border: 1px solid rgba(190, 150, 50, 0.35);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.benefit-label {
+  margin-bottom: 10px;
+  color: #a77b1f;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.benefit-box h3 {
+  margin: 0 0 20px;
+  font-size: clamp(24px, 5vw, 34px);
+}
+
+.coupon-title {
+  margin-top: 25px;
+  color: #666666;
+  font-size: 14px;
+}
+
+/* 無料AI特典 */
+.ai-benefit {
+  background: linear-gradient(
+    145deg,
+    #ffffff 0%,
+    #fffaf0 100%
+  );
+}
+
+.ai-benefit-title {
+  color: #9b7118;
+  font-size: clamp(21px, 4vw, 28px);
+  font-weight: 700;
+}
+
+/* 金色のCTA */
+.gold-ai-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: min(100%, 500px);
+  min-height: 68px;
+  margin-top: 22px;
+  padding: 0 30px;
+  border: 1px solid #f1d777;
+  border-radius: 999px;
+  background: linear-gradient(
+    135deg,
+    #87600d 0%,
+    #c99725 25%,
+    #f5df8d 50%,
+    #c18d19 75%,
+    #7e5809 100%
+  );
+  box-shadow:
+    0 14px 30px rgba(151, 105, 11, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+  font-size: clamp(16px, 4vw, 20px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-shadow: 0 1px 3px rgba(70, 45, 0, 0.55);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.gold-ai-button:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 18px 38px rgba(151, 105, 11, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+/* ブラウザ注意書き */
+.browser-notice {
+  max-width: 600px;
+  margin: 28px auto 0;
+  padding: 18px;
+  border: 1px solid rgba(190, 145, 35, 0.3);
+  border-radius: 14px;
+  background: #fff9e8;
+  color: #5d481b;
+  line-height: 1.8;
+}
+
+.browser-notice p {
+  margin: 8px 0 0;
+}
+
+.ai-note {
+  margin-top: 22px;
+  color: #777777;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  .benefit-box {
+    padding: 34px 20px;
+  }
+
+  .gold-ai-button {
+    min-height: 62px;
+    padding: 10px 20px;
+  }
+}
